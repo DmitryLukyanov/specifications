@@ -110,7 +110,6 @@
     "tests": [
         {
             "description": "Aggregate with deterministic encryption",
-            "skipReason": "SERVER-39395",
             "clientOptions": {
                 "autoEncryptOpts": {
                     "kmsProviders": {
@@ -125,7 +124,7 @@
                         "pipeline": [
                             {
                                 "$match": {
-                                    "encrypted_string": "457-55-5642"
+                                    "encrypted_string": { "$eq" : "string0" }
                                 }
                             }
                         ]
@@ -201,7 +200,14 @@
                             "pipeline": [
                                 {
                                     "$match": {
-                                        "encrypted_string": "457-55-5642"
+                                        "encrypted_string": {
+                                            "$eq": {
+                                                "$binary": {
+                                                    "base64": "AQAAAAAAAAAAAAAAAAAAAAACwj+3zkv2VM+aTfk60RqhXq6a/77WlLwu/BxXFkL7EppGsju/m8f0x5kBDD3EZTtGALGXlym5jnpZAoSIkswHoA==",
+                                                    "subType": "06"
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             ]
@@ -228,7 +234,6 @@
         },
         {
             "description": "Aggregate with empty pipeline",
-            "skipReason": "SERVER-40829 hides agg support behind enableTestCommands flag.",
             "clientOptions": {
                 "autoEncryptOpts": {
                     "kmsProviders": {
@@ -335,7 +340,6 @@
         },
         {
             "description": "Aggregate should fail with random encryption",
-            "skipReason": "SERVER-39395",
             "clientOptions": {
                 "autoEncryptOpts": {
                     "kmsProviders": {
