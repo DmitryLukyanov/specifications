@@ -80,7 +80,7 @@ control the fail point's behavior. ``failCommand`` supports the following
 Speeding Up Tests
 =================
 
-See `Speeding Up Tests </../../retryable-reads/tests/README.rst#speeding-up-tests>`_ in the retryable reads spec tests.
+See `Speeding Up Tests <../../retryable-reads/tests/README.rst#speeding-up-tests>`_ in the retryable reads spec tests.
 
 Test Format
 ===========
