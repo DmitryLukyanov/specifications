@@ -94,7 +94,7 @@ disabled like so::
 Speeding Up Tests
 =================
 
-See `Speeding Up Tests </source/transactions/tests/README.rst#speeding-up-tests>`_ in the Transactions spec tests.
+See `Speeding Up Tests </../../retryable-reads/tests/README.rst#speeding-up-tests>`_ in the retryable reads spec tests.
 
 Use as Integration Tests
 ========================

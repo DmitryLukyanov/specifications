@@ -645,4 +645,3 @@ Changelog
 :2019-02-13: Modify test format for 4.2 sharded transactions, including
              "useMultipleMongoses", ``object: testRunner``, the
              ``targetedFailPoint`` operation, and recoveryToken assertions.
-:2020-06-12: Add the default value for heartbeatFrequencyMS.
