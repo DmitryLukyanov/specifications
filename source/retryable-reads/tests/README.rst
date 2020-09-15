@@ -155,10 +155,10 @@ tests. Python was able to decrease the run time of the tests greatly by lowering
 the SDAM's ``minHeartbeatFrequencyMS`` from 500ms to 50ms, thus decreasing the
 waiting time after a "not master" error:
 
-.. _minHeartbeatFrequencyMS: https://github.com/mongodb/specifications/blob/master/source/server-discovery-and-monitoring/server-discovery-and-monitoring.rst#minheartbeatfrequencyms
-Also, similar improvement can be added for _``heartbeatFrequencyMS``: https://github.com/mongodb/specifications/blob/master/source/server-discovery-and-monitoring/server-discovery-and-monitoring.rst#heartbeatfrequencyms. by setting the default heartbeatFrequencyMS to 5ms in order to take into account the latest changes regarding streaming protocol. If a test has an explicit heartbeatFrequencyMS value, drivers should use the explicit value.
-	
-See also `Speeding Up Tests </source/transactions/tests/README.rst#speeding-up-tests>`_ in the Transactions spec tests.
+Also, similar improvement can be added for `heartbeatFrequencyMS`_ by setting the default heartbeatFrequencyMS to 5ms in order to take into account the latest changes regarding streaming protocol. If a test has an explicit heartbeatFrequencyMS value, drivers should use the explicit value.
+
+.. _minHeartbeatFrequencyMS: https://github.com/mongodb/specifications/blob/master/source/server-discovery-and-monitoring/server-discovery-and-monitoring.rst#minheartbeatfrequencyms	
+.. _heartbeatFrequencyMS: https://github.com/mongodb/specifications/blob/master/source/server-discovery-and-monitoring/server-discovery-and-monitoring.rst#heartbeatfrequencyms
 
 Optional Enumeration Commands
 =============================
