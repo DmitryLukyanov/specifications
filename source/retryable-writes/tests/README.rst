@@ -342,5 +342,3 @@ Changelog
              which are now expressed within ``runOn`` elements.
 
              Add test-level ``useMultipleMongoses`` field.
-
-:2020-06-12: Add the default value for heartbeatFrequencyMS.
